@@ -2,7 +2,7 @@
 
 A movie recommendation engine built three different ways - content-based filtering, item-item collaborative filtering, and matrix factorization (SVD) - with an honest comparison of what each method does well and where it breaks. Includes a live Streamlit app.
 
-**[🚀 Live Demo](#)** &nbsp;·&nbsp; built on the [MovieLens small dataset](https://grouplens.org/datasets/movielens/) (100,836 ratings · 610 users · 9,724 movies)
+**[🚀 Live Demo](https://movie-recommender-uuuymejwgjrn3ejcbttnk7.streamlit.app/)** &nbsp;·&nbsp; built on the [MovieLens small dataset](https://grouplens.org/datasets/movielens/) (100,836 ratings · 610 users · 9,724 movies)
 
 ---
 
