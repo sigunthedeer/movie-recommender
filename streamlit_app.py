@@ -1,5 +1,5 @@
 """
-Movie Recommender — Streamlit app
+Movie Recommender - Streamlit app
 Finds movies similar to one you like, using latent factors learned by SVD
 matrix factorization (no popularity bias from naive zero-filling).
 
@@ -32,7 +32,7 @@ def build_model():
     movies = pd.read_csv("movies.csv")
     ratings = pd.read_csv("ratings.csv")
 
-    # train SVD on ALL ratings (full trainset — we're deploying, not evaluating here)
+    # train SVD on ALL ratings (full trainset - we're deploying, not evaluating here)
     reader = Reader(rating_scale=(0.5, 5.0))
     data = Dataset.load_from_df(ratings[['userId', 'movieId', 'rating']], reader)
     trainset = data.build_full_trainset()
@@ -77,7 +77,7 @@ def recommend_similar(title_to_mid, item_sim, raw_movieids,
 # ---------- UI ----------
 st.title("🎬 Movie Recommender")
 st.markdown(
-    "Pick a movie you like — get recommendations based on **latent taste factors** "
+    "Pick a movie you like - get recommendations based on **latent taste factors** "
     "learned by SVD matrix factorization from 100,000+ real ratings. "
     "Unlike a genre-matching system, this captures *what kind of people like what*."
 )
@@ -107,7 +107,7 @@ if choice:
 
 st.divider()
 st.markdown(
-    "<small>Built with SVD (scikit-surprise). Part of a data science portfolio — "
+    "<small>Built with SVD (scikit-surprise). Part of a data science portfolio - "
     "[see the full project & two other methods on GitHub](https://github.com/sigunthedeer).</small>",
     unsafe_allow_html=True,
 )
